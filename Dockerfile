@@ -12,7 +12,8 @@ RUN install_packages \
   libqt5gui5 \
   libqt5core5a
 
-ENV RELEASE 2.0.0-alpha.8/Hyperion-2.0.0-alpha.8-Linux-armv7l
+ARG ng_version
+ENV RELEASE=${ng_version}/Hyperion-${ng_version}-Linux-armv7l
 
 RUN curl -fsSL https://github.com/hyperion-project/hyperion.ng/releases/download/${RELEASE}.deb > /tmp/hyperion.deb && dpkg -i /tmp/hyperion.deb && rm -f /tmp/hyperion.deb
 
