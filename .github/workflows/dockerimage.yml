@@ -34,7 +34,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          build_args: ng_version=${{ github.event.inputs.ngVersion }}
+          build-args: ng_version=${{ github.event.inputs.ngVersion }}
           file: ./Dockerfile
           platforms: linux/arm/v7
           push: true
