@@ -10,7 +10,8 @@ RUN install_packages \
   libqt5network5 \
   libqt5widgets5 \
   libqt5gui5 \
-  libqt5core5a
+  libqt5core5a \
+  libcec4
 
 ARG ng_version
 ENV RELEASE=${ng_version}/Hyperion-${ng_version}-Linux-armv7l
